@@ -1,0 +1,15 @@
+# .gitattributes
+
+# Abaikan folder platform agar tidak dihitung sebagai bahasa
+android/** linguist-vendored
+ios/** linguist-vendored
+windows/** linguist-vendored
+macos/** linguist-vendored
+linux/** linguist-vendored
+web/** linguist-vendored
+
+# Opsional: Sembunyikan build artifacts
+build/** linguist-vendored
+
+# memastikan file Dart tetap terdeteksi
+*.dart linguist-detectable=true
